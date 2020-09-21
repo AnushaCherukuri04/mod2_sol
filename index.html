@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+<style>
+
+/********** Base styles **********/
+  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+  
+h1 {
+  margin-bottom: 15px;
+  font-size: 75%;
+}
+
+div {
+border: 1px solid black;
+font-size:125%;
+position:absolute;
+top:0;
+right:0;
+
+ background-color:#68DF98;
+float:left;
+}
+
+p{
+top:10px;
+
+}
+section {
+  border: 1px solid black;
+  margin: 1px;
+  padding: 10px;
+  position: relative;
+  overflow:auto;
+}
+#section1 {
+  background-color: #6756EE;
+ height:100px;
+ float:left;
+
+}
+#section2 {
+  background-color: #DE5687;
+height:100px;
+ float:left;
+}
+#section3 {
+  background-color: yellow;
+  height:100px;
+ float:left;
+}
+/**********desktop view only 992px and above**********/
+@media (min-width: 992px) {
+  #section1 {
+    width: 33.3%;
+  }
+  #section2 {
+    width: 33.3%;
+  }
+  #section3 {
+    width: 33.3%;
+  }
+}
+
+
+/**********tablet view (between 768px and 991px only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #section1 {
+    width: 50%;
+  }
+  #section2 {
+    width: 50%;
+  }
+  #section3 {
+    width: 100%;
+  }
+
+  }
+
+/**********mobile view (equal to or less than 767px)**********/
+@media (max-width: 767px) {
+  #section1 {
+    width: 100%;
+  }
+  #section2 {
+    width: 100%;
+  }
+  #section3 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<section id="section1">
+<div>Coffee 
+ </div>
+ 
+    <p> Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.
+    </p>
+  
+  </section>
+  <section id="section2">
+ <div> Tea  </div>
+     <p> Tea is an aromatic beverage commonly prepared by pouring hot or boiling water over cured or fresh leaves of the Camellia sinensis,
+         an evergreen shrub native to East Asia.
+     </p>
+  </section>
+  
+  <section id="section3">
+  <div>Milk </div>
+      <p> Milk is a nutrient-rich liquid food produced in the mammary glands of mammals. 
+       
+      </p>
+   </section>
+
+
+</body>
+</html>
